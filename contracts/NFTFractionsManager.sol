@@ -53,6 +53,7 @@ contract NFTFractionsManager is ERC721, Ownable {
         newowner.itemOwner = _newOwner;
         newowner.share = _pricedivision(_itemId);
         partOwnership[_itemId] = Owners(_itemId,newowner.currentowners,newowner.share, _newOwner);
+        partowners.push(Owners(_itemId,newowner.currentowners, newowner.share,_newOwner))
     }
     
     function _pricedivision(uint _itemId) public returns(uint) {
