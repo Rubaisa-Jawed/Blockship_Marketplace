@@ -21,33 +21,25 @@
   
 <h3>addOwner Function</h3>
 <li>require check to see if the owner number don't exceed the max owners
-<li>New owner added to owner array
-<li>
-<li>
-<li>
-<li>
+<li>pricedivision function called here to set owner shares
+<li>New owner added to owner array and updated in owner mapping
 
-<h3></h3>
-<li>
-<li>
-<li>
-<li>
-<li>
-<li>
+<h3>pricedivision function</h3>
+<li>share of owner is calculated by dividing the price of the NFT by the number of its owners
+<li>Loop is used to set the share of each owner of that particular NFT
 
-<h3></h3>
-<li>
-<li>
-<li>
-<li>
-<li>
-<li>
+<h3>sendEther function</h3>
+<li>require checks that the price of the NFT with the passed price
+<li>loop is run to send each owner of the sold NFT their share
 
   
-<h2>NFT Marketplace</h2>
-<li>
-<li>
-<li>
-<li>
-<li>
-<li>
+<h2>Blockship NFT Marketplace</h2>
+<li>Inherits from NFTFractionsManager contract
+<li>enlistitem function is used to enlist new NFTs
+<li>additionalOwners function is used to add new owners
+
+<h3>sellNft function</h3> 
+<li>require to check that the NFT exists in the contract
+<li>transfer function to transfer the NFT to buyer
+<li>sendEther function is called to transfer ether
+<li>Sold NFT is deleted from the mapping.
